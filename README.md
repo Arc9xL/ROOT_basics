@@ -50,6 +50,7 @@ root@d:/home/d# gedit .bashrc
 - After the intallation,
   - Start Xming (this will allow the terminal to display root).
   - Open ther ubuntu terminal
+  - Follow the ROOT installation steps for Ubuntu.
   - `export DISPLAY = "localhost:0"` (optional step)
   - `root -l`
 
