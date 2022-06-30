@@ -6,33 +6,33 @@
 2. Unpack the tar file in ROOTcern folder.
 3. Create a build folder
 ```
-d@d:~/ROOTcern$ mkdir root-6.10.04Build 
-d@d:~/ROOTcern$ cd root-6.10.04Build
+usrName@usrName:~/ROOTcern$ mkdir root-6.10.04Build 
+usrName@usrName:~/ROOTcern$ cd root-6.10.04Build
 ```
 
 4. cmake as a super user
 ```
-d@d:~/ROOTcern/root-6.10.04Build$ sudo su
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# cmake ../root-6.10.04
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# cmake -Dall=on .
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# cmake -DCMAKE_INSTALL_PREFIX=/home/usrName/ROOTcern/root-6.10.04install .
+usrName@usrName:~/ROOTcern/root-6.10.04Build$ sudo su
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# cmake ../root-6.10.04
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# cmake -Dall=on .
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# cmake -DCMAKE_INSTALL_PREFIX=/home/usrName/ROOTcern/root-6.10.04install .
 ```
 
 5. make
 ```
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# make -j4
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# make -j4
 ```
 
 6. install
 ```
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# make install
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# make install
 ```
 7. .bashrc file
 
 - Open .bashrc file
 ```
-root@d:/home/usrName/ROOTcern/root-6.10.04Build# cd
-root@d:~# gedit .bashrc 
+root@usrName:/home/usrName/ROOTcern/root-6.10.04Build# cd
+root@usrName:~# gedit .bashrc 
 ```
 - Add following lines to it.
 ```
@@ -41,8 +41,8 @@ source /home/usrName/ROOTcern/root-6.10.04install/bin/thisroot.sh
 ```
 8. To access root as a normal user, I am also adding this lines to .bashrc file in /home/d
 ```
-root@d:~# cd /home/usrName/
-root@d:/home/d# gedit .bashrc 
+root@usrName:~# cd /home/usrName/
+root@usrName:/home/usrName# gedit .bashrc 
 ```
 
 ### - Windows
